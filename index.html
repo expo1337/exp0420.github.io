@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>exp0.io</title>
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+	<link rel="stylesheet" href="css/rain.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+	<audio loop id="music">
+		<source src="music.mp3" type="audio/mpeg">
+	</audio>
+  </head>
+  <body class="back-row-toggle splat-toggle">
+	<div class="rain front-row"></div>
+    <div id="homepage" class="middle">
+      <div id="terminal">
+        <div id="terminal-header">
+          <div>
+            <div id="controls">
+              <i class="fa fa-window-minimize" style="font-size: 8px;"></i>
+              <i class="fa fa-window-restore" style="font-size: 10px;"></i>
+              <i class="fa fa-times" style="font-size: 14px;"></i>
+            </div>
+			<div style="margin: 0 auto; width: 100px;">konsole~</div>
+          </div>
+        </div>
+        <div id="content">
+			<noscript>
+				</br>
+				<div>
+				<span class="red">root@exp0.github.io</span>:<span class="blue">~</span># ./nojs.sh
+					<p>Please enable JavaScript to use this site.</p>
+				</div>
+			</noscript>
+		</div>
+      </div>
+      <span class="taille"></span>
+    </div>
+	<div id="copyright">
+		<script>
+			function Year(number) { return (number < 1000) ? number + 1900 : number; }
+			document.write('© '+Year(new Date().getYear())+' exp0 - All Rights Reserved');
+		</script>
+	</div>
+    <script>var visits=0;</script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/script.js"></script>
+	<script src="js/rain.js"></script>
+  </body>
+</html>
