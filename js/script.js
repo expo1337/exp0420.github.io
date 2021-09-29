@@ -242,7 +242,7 @@ const countEL = document.getElementById('count');
 updateVisitCount();
 
 function updateVisitCount() {
-	fetch('https://api.countapi.xyz/update/exp0/websitegithub/?amount=2')
+	fetch('https://api.countapi.xyz/hit/exp0.github.io/')
 		.then(res => res.json())
 		.then(res => {
 			countEL.innerHTML = res.value;
