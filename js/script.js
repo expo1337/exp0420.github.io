@@ -51,7 +51,7 @@ const commands = {
 	visitors: 
 	{
 		cmd: 'visitors',
-		res: 'Total Visits: <span class="red">' + visits + '</span>'
+		res: 'Total Visits: <span class="red" id="count1">'+'0'+'</span>'
 	},
 	whoami: 
 	{
@@ -238,7 +238,7 @@ $('form').on('submit', function(e) {
 	}
 	$('input').val('');$('#content').getNiceScroll(0).resize().doScrollTop($('#content')[0].scrollHeight, 0);
 })
-const countEL = document.getElementById('count');
+const countEL = document.getElementById('count','count1');
 updateVisitCount();
 
 function updateVisitCount() {
