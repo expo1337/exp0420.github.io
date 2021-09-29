@@ -246,6 +246,7 @@ function updateVisitCount() {
 		.then(res => res.json())
 		.then(res => {
 			countEL.innerHTML = res.value;
+                        document.alert(countEL);
 		});
 }
 const visitorIP = document.getElementById('ipadd');
