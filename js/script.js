@@ -48,11 +48,6 @@ const commands = {
 		cmd: 'links',
 		res: 'Links:<br># <span class="red"><a href="https://discord.gg/QJxdea7GXe" target="_blank"><u>Discord</u></a></span><br># <span class="red"><a href="https://github.com/exp0420" target="_blank"><u>Github</u></a></span> - Github info <3. </u></a></span><br># <span class="red"><a href="https://steamcommunity.com/id/expo420/" target="_blank"><u>Steam</u></a></span> - You can find me there <span class="green">Online</span> most of the time.<br># <span class="red"><a href="https://twitter.com/exp0_uwu" target="_blank"><u>Twitter</u></a></span> - This one is really dead <br># <span class="red"><a href="<br># <span class="red"><a href="https://tinyurl.com/2wjwp74y" target="_blank"><u>Spotify</u></a></span> - Experience my trash taste in music'
 	},
-	visitors: 
-	{
-		cmd: 'visitors',
-		res: 'Total Visits: <span class="red" id="count1">'+'0'+'</span>'
-	},
 	whoami: 
 	{
 		cmd: 'whoami',
@@ -61,7 +56,7 @@ const commands = {
 	help: 
 	{
 		cmd: 'help',
-		res: 'Available commands:<br><br># <span class="red">aboutme</span> - Some information about me.<br># <span class="red">clear</span> - Really, it just clear. <br># <span class="red">neofetch</span> - Fetches system information in the terminal.<br># <span class="red">links</span> - Links for others sites.<br># <span class="red">music [play/stop/link]</span> - Just BG Music.<br># <span class="red">visitors</span> - How many times people visited this site.<br># <span class="red">whoami</span> - Info about you.<br>'
+		res: 'Available commands:<br><br># <span class="red">aboutme</span> - Some information about me.<br># <span class="red">clear</span> - Really, it just clear. <br># <span class="red">neofetch</span> - Fetches system information in the terminal.<br># <span class="red">links</span> - Links for others sites.<br># <span class="red">music [play/stop/link]</span> - Just BG Music.<br># <span class="red">whoami</span> - Info about you.<br>'
 	}
 }
 
@@ -248,14 +243,4 @@ function updateVisitCount() {
 			countEL.innerHTML = res.value;
                         document.alert(countEL);
 		});
-}
-const visitorIP = document.getElementById('ipadd');
-getVisitorIP();
-
-function getVisitorIP() {
-	fetch('http://ip-api.com/json')
-	.then(res => res.json())
-	.then(res => {
-		countEL.innerHTML = res.value;
-	});
 }
