@@ -151,12 +151,15 @@ $('form').on('submit', function(e) {
 						res: '<div><p>' + res + '</p></div>'
 					});
 				}
-			} else if (vInput.startsWith("music")) {
+			}
+			else if (vInput.startsWith("<script>")) 
+			{window.alert("xss not really working here <3")}
+			else if (vInput.startsWith("music")) {
 				if (vInput === "music play") {
 					if (pMusicPlaying == 1) {
 						launchCommandAsVisitor({
 							cmd: vInput,
-							res: '<div><p>[ <span class="red">ERROR</span> ] Music is already playing!</p></div>'
+							res: '<div><p>[ <span class="purple">ERROR</span> ] Music is already playing!</p></div>'
 						});
 					} else {
 						pMusic.play();
