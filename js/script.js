@@ -23,20 +23,6 @@ var pMusic = document.getElementById("music");
 pMusic.volume = 0.3;
 pMusic.load();
 var pMusicPlaying = 0;
-var sMonth = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-]
 const commands = {
 	aboutme: 
 	{
